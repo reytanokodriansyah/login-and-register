@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login dan Daftar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tabs">
+            <button id="loginTab" class="active">Masuk</button>
+            <button id="registerTab">Daftar</button>
+        </div>
+        <div id="loginForm" class="form">
+            <h2>Silahkan Login</h2>
+            <p>Masuk menggunakan Akun terdaftar Kamu</p>
+            <form id="login">
+                <div class="input-group">
+                    <label for="loginWhatsapp">Nomor Whatsapp</label>
+                    <input type="tel" id="loginWhatsapp" placeholder="Masukan Nomor Whatsapp" required>
+                </div>
+                <div class="input-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" placeholder="Masukan Password" required>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="rememberMe">
+                    <label for="rememberMe">Ingat Saya</label>
+                </div>
+                <a href="#" class="forgot-password">Lupa Password?</a>
+                <button type="submit">Masuk</button>
+            </form>
+            <p class="switch-form">Belum punya akun? <a href="#" id="switchToRegister">Daftar Sekarang</a></p>
+        </div>
+        <div id="registerForm" class="form hidden">
+            <h2>Silahkan Daftar</h2>
+            <p>Masukan informasi pendaftaran dengan benar</p>
+            <form id="register">
+                <div class="input-group">
+                    <label for="fullName">Nama Lengkap</label>
+                    <input type="text" id="fullName" placeholder="Masukan Nama Lengkap" required>
+                </div>
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Masukan Username" required>
+                </div>
+                <div class="input-group">
+                    <label for="whatsapp">Nomor Whatsapp</label>
+                    <input type="tel" id="whatsapp" placeholder="Masukan Nomor Whatsapp" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Masukan Email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Masukan Password" required>
+                </div>
+                <div class="input-group">
+                    <label for="confirmPassword">Konfirmasi Password</label>
+                    <input type="password" id="confirmPassword" placeholder="Masukan Konfirmasi Password" required>
+                </div>
+                <button type="submit">Daftar</button>
+            </form>
+            <p class="switch-form">Sudah punya akun? <a href="#" id="switchToLogin">Masuk Sekarang</a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
